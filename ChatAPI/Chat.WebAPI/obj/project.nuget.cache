@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SATp3Jtrrsdipdx0coUC9fiMjL/HAyN2x8XmfpUZzCbXyBgtqot2VF7t3kPDYXWE8vVBx+PkRzAGa6VFnwGSRg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vntjoig\\Studies\\ASP.NET\\ChatAPI\\ChatAPI\\Chat.WebAPI\\Chat.WebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vntjoig\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

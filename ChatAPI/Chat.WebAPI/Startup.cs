@@ -31,6 +31,9 @@ namespace Chat.WebAPI
 
             // Swagger Config
             services.AddSwaggerConfiguration();
+
+            // Setting up DbContext
+            services.AddDatabaseConfiguration(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

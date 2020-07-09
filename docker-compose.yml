@@ -1,0 +1,12 @@
+version: "3.0"
+
+services:
+  sqlserver:
+    image: http://mcr.microsoft.com/mssql/server:2019-CU3-ubuntu-18.04
+    container_name: sqlserver
+    restart: always
+    ports:
+      - 1433:1433
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: Jao123456

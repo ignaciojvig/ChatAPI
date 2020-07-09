@@ -11,7 +11,7 @@ namespace Chat.Infra.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<UserInterest> builder)
         {
-            builder.HasKey(b => new { b.UserId, b.InterestId });
+            builder.HasKey(b => b.Id);
 
             builder
                 .HasOne(b => b.User)

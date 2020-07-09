@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Chat.Infra.Data\Chat.Infra.Data.csproj" />
+    <ProjectReference Include="..\Chat.Services\Chat.Services.csproj" />
+  </ItemGroup>
+
 </Project>

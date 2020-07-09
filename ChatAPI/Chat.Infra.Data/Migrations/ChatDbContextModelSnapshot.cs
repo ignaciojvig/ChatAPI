@@ -21,7 +21,7 @@ namespace Chat.Infra.Data.Migrations
 
             modelBuilder.Entity("Chat.Domain.Models.Interest", b =>
                 {
-                    b.Property<Guid>("InterestId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("Id")
                         .HasColumnType("uniqueidentifier");
@@ -31,26 +31,26 @@ namespace Chat.Infra.Data.Migrations
                         .HasColumnType("varchar(100)")
                         .HasMaxLength(100);
 
-                    b.HasKey("InterestId");
+                    b.HasKey("Id");
 
                     b.ToTable("Interests");
 
                     b.HasData(
                         new
                         {
-                            InterestId = new Guid("7956b9f9-95e6-4d71-ac4b-511a4df952bc"),
+                            Id = new Guid("7956b9f9-95e6-4d71-ac4b-511a4df952bc"),
                             Name = "Kick Smaug out of the Lonely Mountain"
                         },
                         new
                         {
-                            InterestId = new Guid("0394b33b-dc5e-4924-a565-0c4cb876d7fe"),
+                            Id = new Guid("0394b33b-dc5e-4924-a565-0c4cb876d7fe"),
                             Name = "Chill in the Shire"
                         });
                 });
 
             modelBuilder.Entity("Chat.Domain.Models.User", b =>
                 {
-                    b.Property<Guid>("UserId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("Id")
                         .HasColumnType("uniqueidentifier");
@@ -60,47 +60,55 @@ namespace Chat.Infra.Data.Migrations
                         .HasColumnType("varchar(100)")
                         .HasMaxLength(100);
 
-                    b.HasKey("UserId");
+                    b.HasKey("Id");
 
                     b.ToTable("Users");
 
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("d17fee25-322c-40e9-a18f-98b2f03faf81"),
+                            Id = new Guid("d17fee25-322c-40e9-a18f-98b2f03faf81"),
                             Name = "Thorin Oakenshield"
                         },
                         new
                         {
-                            UserId = new Guid("6157cd72-b417-42a0-b109-f28ad7678833"),
+                            Id = new Guid("6157cd72-b417-42a0-b109-f28ad7678833"),
                             Name = "Bilbo Baggings"
                         });
                 });
 
             modelBuilder.Entity("Chat.Domain.Models.UserInterest", b =>
                 {
-                    b.Property<Guid>("UserId")
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("InterestId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("UserId", "InterestId");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("InterestId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("UserInterests");
 
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("d17fee25-322c-40e9-a18f-98b2f03faf81"),
-                            InterestId = new Guid("7956b9f9-95e6-4d71-ac4b-511a4df952bc")
+                            Id = new Guid("24e1abe0-b74c-409c-a14d-06827c322273"),
+                            InterestId = new Guid("7956b9f9-95e6-4d71-ac4b-511a4df952bc"),
+                            UserId = new Guid("d17fee25-322c-40e9-a18f-98b2f03faf81")
                         },
                         new
                         {
-                            UserId = new Guid("6157cd72-b417-42a0-b109-f28ad7678833"),
-                            InterestId = new Guid("0394b33b-dc5e-4924-a565-0c4cb876d7fe")
+                            Id = new Guid("cab8b16d-60b0-4ec2-82bf-01304d2dcb05"),
+                            InterestId = new Guid("0394b33b-dc5e-4924-a565-0c4cb876d7fe"),
+                            UserId = new Guid("6157cd72-b417-42a0-b109-f28ad7678833")
                         });
                 });
 

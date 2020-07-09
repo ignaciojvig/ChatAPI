@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Chat.Infra.CrossCutting.IoC;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Chat.WebAPI.Configurations
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
 
-
+            NativeInjectorBootStrapper.RegisterServices(services);
         }
     }
 }

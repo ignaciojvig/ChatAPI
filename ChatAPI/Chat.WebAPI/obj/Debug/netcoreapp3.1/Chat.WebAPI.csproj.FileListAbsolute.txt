@@ -18,9 +18,6 @@ C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreap
 C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\obj\Debug\netcoreapp3.1\Chat.WebAPI.csproj.CoreCompileInputs.cache
-C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\obj\Debug\netcoreapp3.1\Chat.WebAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\obj\Debug\netcoreapp3.1\Chat.WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\obj\Debug\netcoreapp3.1\Chat.WebAPI.dll
 C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\obj\Debug\netcoreapp3.1\Chat.WebAPI.pdb
 C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\obj\Debug\netcoreapp3.1\Chat.WebAPI.genruntimeconfig.cache
@@ -61,3 +58,12 @@ C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreap
 C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Chat.Infra.Data.pdb
 C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Chat.Domain.pdb
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Chat.Services.dll
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\obj\Debug\netcoreapp3.1\Chat.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\obj\Debug\netcoreapp3.1\Chat.WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Chat.Services.pdb
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\obj\Debug\netcoreapp3.1\Chat.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Chat.Infra.CrossCutting.IoC.dll
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Chat.Infra.CrossCutting.IoC.pdb

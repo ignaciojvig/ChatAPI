@@ -34,6 +34,12 @@ namespace Chat.WebAPI
 
             // Setting up DbContext
             services.AddDatabaseConfiguration(Configuration);
+
+            // Setting up AutoMapper Profiles
+            services.AddAutoMapperConfiguration();
+
+            // .Net Native DI Abstraction
+            services.AddDependencyInjectionConfiguration();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

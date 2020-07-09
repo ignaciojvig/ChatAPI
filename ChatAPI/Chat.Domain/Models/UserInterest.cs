@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Chat.Domain.Models
 {
-    public class UserInterest
+    public class UserInterest : Entity
     {
         public Guid UserId { get; set; }
         public User User { get; set; }

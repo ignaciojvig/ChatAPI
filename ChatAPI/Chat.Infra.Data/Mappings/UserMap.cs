@@ -11,10 +11,10 @@ namespace Chat.Infra.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.HasKey(b => b.UserId);
+            builder.HasKey(b => b.Id);
 
             builder
-                .Property(b => b.UserId)
+                .Property(b => b.Id)
                 .HasColumnName("Id")
                 .ValueGeneratedOnAdd();
 

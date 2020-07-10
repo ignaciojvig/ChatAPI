@@ -1,4 +1,5 @@
 ﻿using Chat.Domain.Models;
+using Chat.Domain.ViewModels.UserInterest;
 using Chat.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -8,18 +9,18 @@ using System.Threading.Tasks;
 
 namespace Chat.Infra.Data.Repository
 {
-    public class InterestRepository : Repository<Interest>
+    public class UserInterestRepository : Repository<UserInterest>
     {
-        public InterestRepository(ChatDbContext context) : base(context)
+        public UserInterestRepository(ChatDbContext context) : base(context)
         {
         }
 
-        protected async override Task<IEnumerable<Interest>> GetAll()
+        protected async override Task<IEnumerable<UserInterest>> GetAll()
         {
             return await DbSet
                 .AsNoTracking()
-                .Include(x => x.UserInterests)
-                    .ThenInclude(x => x.User)
+                .Include(x => x.Interest)
+                .Include(x => x.User)
                 .ToListAsync();
         }
     }

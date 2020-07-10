@@ -9,7 +9,7 @@ namespace Chat.Domain.Interfaces.Service_Interfaces
 {
     public interface IInterestService
     {
-        Task<IEnumerable<InterestViewModel>> GetAll();
+        Task<IEnumerable<InterestWithUsersViewModel>> GetAll();
         Task<InterestViewModel> GetById(Guid id);
         Task<Interest> Add(InterestCreateViewModel newInterest);
         Task<Interest> Update(InterestUpdateViewModel updateInterest);

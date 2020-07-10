@@ -2,9 +2,7 @@
 using Chat.Domain.Models;
 using Chat.Domain.ViewModels.Interest;
 using Chat.Domain.ViewModels.User;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Chat.Domain.ViewModels.UserInterest;
 
 namespace Chat.Services.AutoMapper
 {
@@ -17,6 +15,9 @@ namespace Chat.Services.AutoMapper
 
             CreateMap<InterestCreateViewModel, Interest>();
             CreateMap<InterestUpdateViewModel, Interest>();
+
+            CreateMap<UserInterestCreateViewModel, UserInterest>();
+            CreateMap<UserInterestUpdateViewModel, UserInterest>();
         }
     }
 }

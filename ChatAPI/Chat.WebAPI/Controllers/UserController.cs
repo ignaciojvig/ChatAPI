@@ -36,7 +36,7 @@ namespace Chat.WebAPI.Controllers
         public async Task<IActionResult> AddNewUser([FromBody] UserCreateViewModel newUser)
         {
             var addedUser = await _userService.Add(newUser);
-            return CreatedAtAction("GetUserById", new { id = addedUser.Id });
+            return CreatedAtAction(nameof(GetUserById), new { id = addedUser.Id }, addedUser);
         }
 
         [HttpPut]

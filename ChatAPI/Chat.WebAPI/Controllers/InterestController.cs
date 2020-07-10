@@ -36,7 +36,7 @@ namespace Chat.WebAPI.Controllers
         public async Task<IActionResult> AddNewInterest([FromBody] InterestCreateViewModel newInterest)
         {
             var addedInterest = await _interestService.Add(newInterest);
-            return CreatedAtAction(nameof(GetInterestById), new { id = addedInterest.Id });
+            return CreatedAtAction(nameof(GetInterestById), new { id = addedInterest.Id }, addedInterest);
         }
 
         [HttpPut]

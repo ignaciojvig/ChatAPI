@@ -17,12 +17,14 @@ namespace Chat.Infra.CrossCutting.IoC
             #region Services
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IInterestService, InterestService>();
+            services.AddScoped<IUserInterestService, UserInterestService>();
             #endregion
 
             #region Infra.Data
             services.AddScoped<ChatDbContext>();
             services.AddScoped<IRepository<User>, UserRepository>();
             services.AddScoped<IRepository<Interest>, InterestRepository>();
+            services.AddScoped<IRepository<UserInterest>, UserInterestRepository>();
             #endregion
         }
     }

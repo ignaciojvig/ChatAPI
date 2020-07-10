@@ -32,7 +32,7 @@ namespace Chat.Services.Services
                 {
                     Id = x.Id,
                     Name = x.Name,
-                    UserInterests = x.UserInterests.Select(y => new InterestViewModel
+                    Interests = x.UserInterests.Select(y => new InterestViewModel
                     {
                         Id = y.Interest.Id,
                         Name = y.Interest.Name

@@ -4,8 +4,10 @@ using Chat.Domain.Interfaces.Repository_Interfaces;
 using Chat.Domain.Interfaces.Service_Interfaces;
 using Chat.Domain.Models;
 using Chat.Domain.ViewModels.Interest;
+using Chat.Domain.ViewModels.User;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,10 +24,20 @@ namespace Chat.Services.Services
             _interestRepository = interestRepository;
         }
 
-        public async Task<IEnumerable<InterestViewModel>> GetAll()
+        public async Task<IEnumerable<InterestWithUsersViewModel>> GetAll()
         {
-            return _mapper.Map<IEnumerable<InterestViewModel>>(
-                await _interestRepository.GetAll());
+            var interestList = await _interestRepository.GetAll();
+            var interestListViewModel = interestList
+                .Select(x => new InterestWithUsersViewModel
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Users = x.UserInterests
+                        .Select(y => new UserViewModel { Id = y.User.Id, Name = y.User.Name })
+                        .ToList()
+                }).ToList();
+
+            return interestListViewModel;
         }
 
         public async Task<InterestViewModel> GetById(Guid id)

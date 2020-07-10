@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PlXYxwuwoRM1XXxfaVL5E51caR9Xa/2DOlgAeGC5PbwRnJZU2pIG04KjDNYdYD++Kcvq/jaQuO0qjzaAIi8OaQ==",
+  "dgSpecHash": "AaDhEGozZnPcWzQgJj848TL9NOBjvX3hBQPoUqkZqW+CYASZ0Is7BRlkcSOhd5033akU0W1w0pXuZKA6XlmjkA==",
   "success": true,
   "projectFilePath": "C:\\Users\\vntjoig\\Studies\\ASP.NET\\ChatAPI\\ChatAPI\\Chat.WebAPI\\Chat.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\vntjoig\\.nuget\\packages\\microsoft.extensions.options\\3.1.5\\microsoft.extensions.options.3.1.5.nupkg.sha512",
     "C:\\Users\\vntjoig\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.5\\microsoft.extensions.primitives.3.1.5.nupkg.sha512",
     "C:\\Users\\vntjoig\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
+    "C:\\Users\\vntjoig\\.nuget\\packages\\microsoft.netcore.analyzers\\3.0.0\\microsoft.netcore.analyzers.3.0.0.nupkg.sha512",
     "C:\\Users\\vntjoig\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\vntjoig\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\vntjoig\\.nuget\\packages\\microsoft.openapi\\1.1.4\\microsoft.openapi.1.1.4.nupkg.sha512",

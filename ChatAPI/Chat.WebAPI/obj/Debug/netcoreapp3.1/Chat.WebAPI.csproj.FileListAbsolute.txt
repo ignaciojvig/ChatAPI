@@ -67,3 +67,11 @@ C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreap
 C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\obj\Debug\netcoreapp3.1\Chat.WebAPI.csproj.CoreCompileInputs.cache
 C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\obj\Debug\netcoreapp3.1\Chat.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\obj\Debug\netcoreapp3.1\Chat.WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\vntjoig\Studies\ASP.NET\ChatAPI\ChatAPI\Chat.WebAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

@@ -24,6 +24,23 @@ namespace Chat.Infra.Data.Mappings
                 .HasMaxLength(100)
                 .IsRequired();
 
+            builder
+                .Property(b => b.Username)
+                .HasColumnType("varchar(100)")
+                .HasMaxLength(100)
+                .IsRequired();
+
+            builder
+                .Property(b => b.Password)
+                .HasColumnType("varchar(100)")
+                .HasMaxLength(100)
+                .IsRequired();
+
+            builder
+                .Property(b => b.Role)
+                .HasColumnType("varchar(100)")
+                .HasMaxLength(100)
+                .IsRequired();
         }
     }
 }

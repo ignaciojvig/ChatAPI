@@ -23,12 +23,18 @@ namespace Chat.Infra.Data.Seed
                 new User
                 {
                     Id = thorinId,
-                    Name = "Thorin Oakenshield"
+                    Name = "Thorin Oakenshield",
+                    Username = "thorin123",
+                    Password = "oaken123",
+                    Role = "Admin",
                 },
                 new User
                 {
                     Id = bilboId,
-                    Name = "Bilbo Baggings"
+                    Name = "Bilbo Baggings",
+                    Username = "bilbo123",
+                    Password = "baggings123",
+                    Role = "Admin",
                 });
 
             modelBuilder.Entity<Interest>().HasData(

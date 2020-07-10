@@ -1,5 +1,7 @@
 ﻿using Chat.Domain.Interfaces;
+using Chat.Domain.Interfaces.Repository_Interfaces;
 using Chat.Domain.Models;
+using Chat.Domain.ViewModels.Auth;
 using Chat.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -10,10 +12,20 @@ using System.Threading.Tasks;
 
 namespace Chat.Infra.Data.Repository
 {
-    public class UserRepository : Repository<User>
+    public class UserRepository : Repository<User>, IUserRepository
     {
         public UserRepository(ChatDbContext context) : base(context)
         {
+        }
+
+        public async Task<User> GetUserByCredentials(LoginViewModel loginCredentials)
+        {
+            return await DbSet
+                .AsNoTracking()
+                .Where(x =>
+                    x.Username == loginCredentials.Username &&
+                    x.Password == loginCredentials.Password)
+                .FirstOrDefaultAsync();
         }
 
         protected async override Task<IEnumerable<User>> GetAll()

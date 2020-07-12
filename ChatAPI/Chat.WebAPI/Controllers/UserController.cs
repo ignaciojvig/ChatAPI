@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using Chat.Domain.Interfaces;
 using Chat.Domain.Interfaces.Service_Interfaces;
 using Chat.Domain.ViewModels.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Chat.WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;

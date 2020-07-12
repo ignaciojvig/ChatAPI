@@ -1,5 +1,6 @@
 ﻿using Chat.Domain.Interfaces.Service_Interfaces;
 using Chat.Domain.ViewModels.UserInterest;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ namespace Chat.WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize(Roles = "Admin")]
     public class UserInterestController : ControllerBase
     {
         private readonly IUserInterestService _userInterestService;

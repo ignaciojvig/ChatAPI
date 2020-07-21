@@ -11,7 +11,7 @@ namespace Chat.WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "AdminClaim, UserInterestsManagement")]
     public class UserInterestController : ControllerBase
     {
         private readonly IUserInterestService _userInterestService;

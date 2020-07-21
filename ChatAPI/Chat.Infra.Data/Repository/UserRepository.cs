@@ -25,6 +25,9 @@ namespace Chat.Infra.Data.Repository
                 .Where(x =>
                     x.Username == loginCredentials.Username &&
                     x.Password == loginCredentials.Password)
+                .Include(x => x.UserRole)
+                    .ThenInclude(x => x.RoleClaims)
+                        .ThenInclude(x => x.Claim)
                 .FirstOrDefaultAsync();
         }
 

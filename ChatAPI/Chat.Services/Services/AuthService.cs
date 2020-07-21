@@ -7,6 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,12 +33,13 @@ namespace Chat.Services.Services
         public string GenerateToken(User user)
         {
             var key = Encoding.ASCII.GetBytes(_configuration.GetValue<string>("Secret"));
-            var tokenDescriptor = new SecurityTokenDescriptor
+
+            var claimList = user.UserRole.RoleClaims.Select(x =>
+                            new Claim(x.Claim.Name, x.Claim.Name)).ToList();
+
+             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(
-                    new Claim[] {
-                        new Claim(ClaimTypes.Role, user.Role)
-                    }),
+                Subject = new ClaimsIdentity(claimList),
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(
                     new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)

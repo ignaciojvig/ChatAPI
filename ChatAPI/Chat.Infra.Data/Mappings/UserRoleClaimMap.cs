@@ -1,4 +1,4 @@
-﻿using Chat.Domain.Models;
+﻿using Chat.Domain.Models.Identity_Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -7,9 +7,9 @@ using System.Text;
 
 namespace Chat.Infra.Data.Mappings
 {
-    public class UserInterestMap : IEntityTypeConfiguration<UserInterest>
+    public class UserRoleClaimMap : IEntityTypeConfiguration<UserRoleClaim>
     {
-        public void Configure(EntityTypeBuilder<UserInterest> builder)
+        public void Configure(EntityTypeBuilder<UserRoleClaim> builder)
         {
             builder.HasKey(b => b.Id);
 
@@ -19,16 +19,16 @@ namespace Chat.Infra.Data.Mappings
                 .ValueGeneratedOnAdd();
 
             builder
-                .HasOne(b => b.User)
-                .WithMany(b => b.UserInterests)
-                .HasForeignKey(b => b.UserId)
+                .HasOne(b => b.Role)
+                .WithMany(b => b.RoleClaims)
+                .HasForeignKey(b => b.RoleId)
                 .OnDelete(DeleteBehavior.Restrict)
                 .IsRequired();
 
             builder
-                .HasOne(b => b.Interest)
-                .WithMany(b => b.UserInterests)
-                .HasForeignKey(b => b.InterestId)
+                .HasOne(b => b.Claim)
+                .WithMany(b => b.RoleClaims)
+                .HasForeignKey(b => b.ClaimId)
                 .OnDelete(DeleteBehavior.Restrict)
                 .IsRequired();
         }

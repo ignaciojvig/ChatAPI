@@ -37,9 +37,9 @@ namespace Chat.Infra.Data.Mappings
                 .IsRequired();
 
             builder
-                .Property(b => b.Role)
-                .HasColumnType("varchar(100)")
-                .HasMaxLength(100)
+                .HasOne(b => b.UserRole)
+                .WithMany(b => b.Users)
+                .HasForeignKey(b => b.UserRoleId)
                 .IsRequired();
         }
     }

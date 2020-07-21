@@ -12,7 +12,7 @@ namespace Chat.WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [Authorize]
+    [Authorize(Roles = "AdminClaim, UsersManagement")]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
